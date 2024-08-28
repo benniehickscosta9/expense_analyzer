@@ -1,16 +1,6 @@
 # Personal Expense Tracker
 
-A simple Python tool to track, analyze, and visualize personal expenses.
-
-## Features
-
-- **Add Expenses**: Record expenses with amount, category, and description
-- **View Expenses**: See all recorded expenses in a list format
-- **Expense Summary**: Get total expenses broken down by category
-- **Visualizations**: 
-  - Pie chart showing expense distribution
-  - Bar chart comparing categories
-  - Monthly trend analysis (with sufficient data)
+A simple Python tool to analyze and visualize personal expenses.
 
 ## Installation
 
@@ -27,39 +17,46 @@ A simple Python tool to track, analyze, and visualize personal expenses.
    python main.py
    ```
 
-2. Follow the menu prompts:
-   - **Option 1**: Add new expenses
-   - **Option 2**: View all recorded expenses
-   - **Option 3**: See expense summary by category
-   - **Option 4**: Generate pie chart visualization
-   - **Option 5**: Generate bar chart visualization
-   - **Option 6**: View monthly trend (requires multiple entries)
-   - **Option 7**: Exit the application
+2. Follow the menu options:
+   - **Add Expense**: Record new expenses with amount, category, and optional description
+   - **View Summary**: See total expenses and breakdown by category
+   - **Show Category Pie Chart**: Visualize expense distribution as pie chart
+   - **Show Category Bar Chart**: View expenses by category as bar chart
+   - **Show Monthly Trend**: See expense trends over time
+   - **Exit**: Close the application
 
-## Data Storage
+## Features
 
-- Expenses are automatically saved to `expenses.json`
-- Data persists between sessions
-- File is created automatically when you add your first expense
+- **Data Persistence**: Expenses are automatically saved to `expenses.json`
+- **Category Analysis**: Group and analyze expenses by category
+- **Visualizations**: Multiple chart types for better insights
+- **Simple Interface**: Easy-to-use text-based menu
+- **Trend Analysis**: View monthly spending patterns
 
-## Example Categories
+## File Structure
 
-- Food
-- Transport
-- Entertainment
-- Utilities
-- Shopping
-- Healthcare
-- Education
+- `expense_tracker.py` - Core expense management functionality
+- `expense_visualizer.py` - Chart and graph creation
+- `main.py` - Main application interface
+- `expenses.json` - Data storage (created automatically)
+- `requirements.txt` - Required Python packages
 
-## Customization
+## Example Usage
 
-You can easily modify the categories or add new visualization types by editing the respective Python files.
+```
+=== PERSONAL EXPENSE TRACKER ===
+1. Add Expense
+2. View Summary
+3. Show Category Pie Chart
+4. Show Category Bar Chart
+5. Show Monthly Trend
+6. Exit
 
-## Requirements
+Enter your choice (1-6): 1
+Enter amount: $25.50
+Enter category (e.g., Food, Transport, Entertainment): Food
+Enter description (optional): Lunch at restaurant
+Expense added: $25.5 for Food
+```
 
-- Python 3.7+
-- matplotlib
-- pandas
-
-The tool provides a simple, intuitive interface for personal finance tracking and visualization!
+The tool will help you track and understand your spending patterns through both numerical summaries and visual charts!
